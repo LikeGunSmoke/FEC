@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cloudinary = require('cloudinary').v2;
 
-const config = require('../config.js');
+const config = require('../../config.js');
 
 cloudinary.config({
   cloud_name: `${config.CLOUD_NAME}`,
