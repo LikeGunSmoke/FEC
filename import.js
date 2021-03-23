@@ -6,11 +6,11 @@ const reviews = 'reviews.csv';
 const photos = 'reviews_photos.csv';
 const chars = 'characteristics.csv';
 
-const filePath = `/Users/robertstrange/Desktop/SDC/${photos}`;
+const filePath = `/Users/robertstrange/Desktop/SDC/${reviews}`;
 
 // Change if/when needed
 const db = 'reviewsWarehouse';
-const collection = 'reviews_photos';
+const collection = 'reviews';
 
 const command = `mongoimport --db ${db} --collection ${collection} --type csv --headerline --file '${filePath}'`
 

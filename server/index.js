@@ -33,7 +33,7 @@ const reviews_photos = new mongoose.Schema({
 }, {collection: 'reviews_photos'});
 
 const characteristics = new mongoose.Schema({
-  id: Number,
+  id: {type: Number,  index: true},
   product_id: Number,
   name: String,
 }, {collection: 'characteristics'});
@@ -46,8 +46,8 @@ const characteristic_reviews = new mongoose.Schema({
 }, {collection: 'characteristic_reviews'});
 
 const reviews = new mongoose.Schema({
-  id: Number,
-  product_id: Number,
+  id: {type: Number, index: true},
+  product_id: {type: Number,  index: true},
   rating: Number,
   date: Date,
   summary: String,
