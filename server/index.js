@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose'); // added by me
 
-const helpers = require('./helpers');
+//const helpers = require('./helpers');
 
 const app = express();
 const port = 3000;
